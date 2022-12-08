@@ -1,0 +1,78 @@
+form {
+    display: grid;
+
+    padding: 10px;
+
+    label {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-size: 15px;
+        }
+
+        input, .select {
+            height: 38px;
+            width: 100%;
+            border-radius: 5px;
+            
+        }
+
+        input {
+            padding-left: 5px;
+            border: 1px solid #b3b3b3;
+        }
+
+        .select {
+            input {
+                height: 20px;
+            }
+        }
+    }
+
+    button {
+        width: 100%;
+        height: 38px;
+
+        background-color: var(--blue);
+        color: var(--white);
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    form {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 699px) {
+    form {
+        grid-template-areas: "input select" "button button";
+        gap: 10px;
+
+        .label_date {
+            grid-area: input;
+        }
+
+        .label_select {
+            grid-area: select;
+        }
+
+        .button_filter {
+            grid-area: button;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    form {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+
+        button {
+            margin-top: auto;
+        }
+    }
+}

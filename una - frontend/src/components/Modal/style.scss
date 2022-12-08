@@ -1,0 +1,56 @@
+.container_modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, .8);
+
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  padding: 15px;
+}
+
+.d_flex {
+  display: flex;
+}
+
+.d_none {
+  display: none;
+}
+
+.box_content {
+  max-width: 600px;
+  width: 100%;
+  height: fit-content;
+
+  background-color: var(--white);
+  margin: auto;
+
+  padding: 15px;
+  border-radius: 5px;
+
+  p {
+    margin: 10px 0px;
+  }
+
+  a {
+    word-break: break-word;
+    margin-top: 15px;
+  }
+
+  button {
+    width: 100%;
+    background-color: var(--blue);
+    padding: 10px 0;
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+}
